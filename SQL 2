@@ -1,0 +1,8 @@
+-- Create the Customer table
+CREATE TABLE Customer (
+  customer_id INT PRIMARY KEY,
+  name VARCHAR(255),
+  address TEXT,
+  phone_number VARCHAR(20),
+  email VARCHAR(255)
+);
