@@ -1,0 +1,28 @@
+-- Create the Employee table
+CREATE TABLE Employee (
+  employee_id INT PRIMARY KEY,
+  name VARCHAR(255),
+  position VARCHAR(50),
+  phone_number VARCHAR(20),
+  email VARCHAR(255)
+);
+
+-- Create the Purchase table
+CREATE TABLE Purchase (
+  purchase_id INT PRIMARY KEY,
+  purchase_date DATE,
+  customer_id INT,
+  employee_id INT,
+  total_price DECIMAL(10,2),
+  FOREIGN KEY (customer_id) REFERENCES Customer(customer_id),
+  FOREIGN KEY (employee_id) REFERENCES Employee(employee_id)
+);
+
+-- Create the Supplier table
+CREATE TABLE Supplier (
+  supplier_id INT PRIMARY KEY,
+  name VARCHAR(255),
+  address TEXT,
+  phone_number VARCHAR(20),
+  email VARCHAR(255)
+);
