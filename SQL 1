@@ -1,0 +1,10 @@
+CREATE TABLE Item (
+  item_id INT PRIMARY KEY,
+  name VARCHAR(255),
+  description TEXT,
+  condition VARCHAR(50),
+  price DECIMAL(10,2),
+  date_of_origin DATE,
+  supplier_id INT,
+  FOREIGN KEY (supplier_id)int(supplier_id)
+);
