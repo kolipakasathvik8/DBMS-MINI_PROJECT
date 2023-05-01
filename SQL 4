@@ -1,0 +1,26 @@
+FOR ITEMS IN SHOP:
+                    -- Insert data into the Item table
+INSERT INTO Item (item_id, name, description, condition, price, date_of_origin, supplier_id) VALUES
+  (1, 'Antique Chair', 'A beautiful wooden chair from the 18th century', 'Good', 500.00, '1750-01-01', 1),
+  (2, 'Vintage Dresser', 'A stunning mahogany dresser from the 1920s', 'Excellent', 1200.00, '1925-01-01', 2),
+  (3, 'Art Deco Lamp', 'A unique and rare Art Deco lamp from the 1930s', 'Fair', 300.00, '1935-01-01', 1);
+FOR CUSTOMER:
+-- Insert data into the Customer table
+INSERT INTO Customer (customer_id, name, address, phone_number, email) VALUES
+  (1, 'John Smith', '123 Main St, Anytown, USA', '555-1234', 'john.smith@email.com'),
+  (2, 'Jane Doe', '456 Maple Ave, Anytown, USA', '555-5678', 'jane.doe@email.com');
+FOR EMPLOYEE:
+-- Insert data into the Employee table
+INSERT INTO Employee (employee_id, name, position, phone_number, email) VALUES
+  (1, 'Mike Johnson', 'Manager', '555-1111', 'mike.johnson@email.com'),
+  (2, 'Sarah Lee', 'Sales Associate', '555-2222', 'sarah.lee@email.com');
+FOR PURCHASING THE ITEM:
+-- Insert data into the Purchase table
+INSERT INTO Purchase (purchase_id, purchase_date, customer_id, employee_id, total_price) VALUES
+  (1, '2022-01-01', 1, 2, 500.00),
+  (2, '2022-02-01', 2, 1, 1500.00);
+
+-- Insert data into the Supplier table
+INSERT INTO Supplier (supplier_id, name, address, phone_number, email) VALUES
+  (1, 'Antique Treasures', '789 Oak St, Anytown, USA', '555-4444', 'antiquetreasures@email.com'),
+
